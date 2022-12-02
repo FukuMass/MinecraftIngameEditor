@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "MinecraftIngameEditor",
+  "version": "${version}",
+  "name": "MinecraftIngameEditor",
+  "description": "Allows for browsing and editing files inside of minecraft",
+  "authors": [
+    "FukuMass",
+    "NoraMass"
+  ],
+  "contact": {
+    "website": "https://github.com/FukuMass/MinecraftIngameEditor",
+    "repo": "git@github.com:FukuMass/MinecraftIngameEditor.git"
+  },
+  "license": "MIT",
+  "icon": "assets/MinecraftIngameEditor/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "io.github.fukumass.minecraftingameeditor.minecraftingameeditor.client.MinecraftIngameEditorClient"
+    ],
+    "main": [
+      "io.github.fukumass.minecraftingameeditor.minecraftingameeditor.MinecraftIngameEditor"
+    ]
+  },
+  "mixins": [
+    "MinecraftIngameEditor.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
